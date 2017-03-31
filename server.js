@@ -10,7 +10,7 @@ app.get("/posts", (req, res)=>{
   console.log(posts.length)
   res.send(posts)
 });
- 
+
 app.post("/posts", (req, res)=>{
   posts.push(req.body);
   res.send(posts)
